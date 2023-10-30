@@ -1,0 +1,44 @@
+import java.util.*;
+class thread extends Thread{
+    String s,int i;
+    thread(String s,int i){
+        this.s=s;
+        this.i=i;
+    }
+    boolean isVowel(String s){
+        char a=s.toLowerCase.charAt(0);
+        if (a=='a'||a=='e'||a=='i'||a=='o'||a=='u')
+        return true;
+        return false;
+    }
+    public void run(){
+        int count=0;
+        String l[]=s.split();
+        switch (i){
+            case 1:{
+                for (String sub: l){
+                    if (sub.isVowel())
+                    count++;
+                }
+                break;
+            }
+            case 2:{
+                for(String sub:l){
+                    System.out.println(sub+": "+sub.length())
+                }
+                break;
+            }
+            default: break;
+        }
+    }
+}
+class prg {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        thread t1=new thread("Arey arey nahi bahi",1);
+        thread t2=new thread("Arey arey nahi bahi",2);
+        t1.start;
+        t2.start;
+
+    }
+}
